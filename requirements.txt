@@ -12,3 +12,4 @@ seaborn
 streamlit
 flask
 memory-profiler
+imbalanced-learn
