@@ -68,3 +68,7 @@ jupyter lab
 **Generated when the notebooks run:** `01-Data_Analaysis_with_Python/data/wine.csv` (downloaded from the UCI [Wine](https://archive.ics.uci.edu/ml/machine-learning-databases/wine/) dataset by `01.4-Reading_Data`) and `03-EDA_and_Feature_Engineering/data/googleplaystore_cleaned.csv` (written by `03.6-Data_Cleaning_and_EDA`).
 
 Check each source for its license terms before using the data outside of learning purposes.
+
+## License
+
+The code and notebooks are released under the [MIT License](LICENSE). The datasets are not covered by this license; they remain under the terms of their original sources listed above.
