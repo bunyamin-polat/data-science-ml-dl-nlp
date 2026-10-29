@@ -47,17 +47,24 @@ pip install jupyter numpy pandas matplotlib seaborn scikit-learn imbalanced-lear
 jupyter lab
 ```
 
-`sqlite3` is part of the Python standard library. The SQLite notebooks create their own example databases (`*.db`) in the module folder.
+`sqlite3` is part of the Python standard library. The SQLite notebooks create their own example databases (`*.db`) when they run; these files are not tracked in Git.
 
 ## Data
 
-The sample datasets are in each module's `data/` folder:
+**Included in the repository:**
 
 | File | Source |
 | --- | --- |
-| `wine.csv`, `winequality-red.csv` | UCI Machine Learning Repository (Wine and Wine Quality datasets) |
-| `googleplaystore.csv` | Google Play Store Apps dataset, published on Kaggle |
-| `flight_price.xlsx` | Flight price dataset, published on Kaggle |
-| `data.csv`, `data.xlsx`, `sales_data.csv` | Small example files for the reading and SQL exercises |
+| `03-EDA_and_Feature_Engineering/data/winequality-red.csv` | [Wine Quality](https://archive.ics.uci.edu/dataset/186/wine+quality), UCI Machine Learning Repository (CC BY 4.0) |
+| `01-Data_Analaysis_with_Python/data/data.csv`, `data.xlsx`, `sales_data.csv` | Small example files created for the reading and SQL exercises |
 
-The datasets are included for learning purposes only; check the original sources for their license terms before any other use.
+**Download before running the notebooks that use them:** third-party datasets are not redistributed here. Download them from Kaggle and save them under the given name:
+
+| Save as | Download | Used by |
+| --- | --- | --- |
+| `03-EDA_and_Feature_Engineering/data/googleplaystore.csv` | `googleplaystore.csv` from [Google Play Store Apps](https://www.kaggle.com/datasets/lava18/google-play-store-apps) | `03.6-Data_Cleaning_and_EDA` |
+| `03-EDA_and_Feature_Engineering/data/flight_price.xlsx` | `Data_Train.xlsx` from [Flight Fare Prediction MH](https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh) | `03.5-EDA_and_Feature_Engineering` |
+
+**Generated when the notebooks run:** `01-Data_Analaysis_with_Python/data/wine.csv` (downloaded from the UCI [Wine](https://archive.ics.uci.edu/ml/machine-learning-databases/wine/) dataset by `01.4-Reading_Data`) and `03-EDA_and_Feature_Engineering/data/googleplaystore_cleaned.csv` (written by `03.6-Data_Cleaning_and_EDA`).
+
+Check each source for its license terms before using the data outside of learning purposes.
